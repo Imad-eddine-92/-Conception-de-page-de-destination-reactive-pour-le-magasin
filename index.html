@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body class="bg-success bg-opacity-25">
 
     <header>
                     <!-- *************** barre de navigation ************** -->
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="#apropos">A propos de nous</a>
                         </li>
                         <li class="nav-item">  
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -57,12 +57,10 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
                     </button>
                 </div>
-
                 <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./Assets/ssss.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="mca">
                         </div>
-               
                     <div class="carousel-item ">
                         <img src="./Assets/GYBZBNkXYAA6Pht.jpg" class="d-block w-100 " style="height: 500px; object-fit: cover;" alt="mca">
                     </div>
@@ -173,15 +171,33 @@
     </main> 
 
                     <!-- **************** footer ***************** -->
+                    <!--**************** section Contact *************-->
     <footer>
-        <div class="card">
-            <div class="card-body" >
-                <blockquote class="blockquote mb-0" >
-                    <p>&copy; 2025 Mouloudia Club D'Alger</p>
-                    <footer class="blockquote-footer"> Imad <cite title="Source Title">
-                </blockquote>
+        <form class="container formulaire bg-success " id="contact">
+            <div class="mb-3 " >
+                <label for="exampleInputEmail1" class="form-label">Nom:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre nom ..">
             </div>
-        </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder=" Votre email..">
+            </div>
+                <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre e-mail avec qui que ce soit d'autre.</div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message..."></textarea>
+                    </div>
+                </div>
+                    <button type="submit" class="btn btn-danger mb-4 ">Envoyer</button>
+        </form>
+            <div class="card mt-5">
+                <div class="card-body" >
+                    <blockquote class="blockquote mb-0" >
+                        <p>&copy; 2025 Mouloudia Club D'Alger</p>
+                        <div class="blockquote-footer"> Imad </div>
+                    </blockquote>
+                </div>
+            </div>
     </footer>
 
                 <!-- ******************* lien JS ******************** -->
